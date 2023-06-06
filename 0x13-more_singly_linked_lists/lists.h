@@ -3,7 +3,7 @@
 
 /**
  * struct listint_s - singly linked list
- * @n: string - (malloc'ed string)
+ * @n: an interger
  * @next: points to the next node
  *
  * Description: singly linked list node structure
