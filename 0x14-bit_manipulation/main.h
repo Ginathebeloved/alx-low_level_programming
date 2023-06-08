@@ -11,6 +11,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 void print_binary(unsigned long int n);
 int _atoi(const char *s);
 int _putchar(char c);
-#int get_endianness(void);
 
 #endif
