@@ -10,19 +10,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file, w, length = 0;
+	int file, w, len = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (length = 0; text_content[length];)
-			length++;
+		for (len = 0; text_content[len];)
+			len++;
 	}
 
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(file, text_content, length);
+	w = write(file, text_content, len);
 
 	if (file == -1 || w == -1)
 		return (-1);
